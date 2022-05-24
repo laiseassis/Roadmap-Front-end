@@ -75,6 +75,7 @@ Montei aqui um roadmap para momentos em que nos sentirmos perdidos sobre "pra on
           <li>Add</li>
           <li>Commit</li>
           <li>Pull/Push</li>
+          <li>Criação de Pull Request - Verificação e Validação</li>
         </ol>
       </li>
       <li><a href="https://gist.github.com/laiseassis/42a9c2ddb869bdd4ca1eaed0cac1a783" target="_blank">Códigos git</a></li>
