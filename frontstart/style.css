@@ -1,0 +1,49 @@
+/* importando e usando fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap');
+
+body{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/* tag html (várias) */
+h2, h3, h6{
+  color: blue;
+}
+
+/* id */
+#my-title{
+  font-size: 2rem;
+}
+
+/* classe */
+.bold{
+  font-weight: 700;
+}
+
+/* seletor de pseudo-classe */
+button:hover{
+  font-weight: bold;
+}
+
+/* seletor de atributo */
+/* <div lang="pt-br"></div> */
+div[lang]{
+  font-weight: bold;
+}
+
+div[lang="pt-br"]{
+  font-weight: bold;
+}
+
+.container{
+  background-color: red;
+  height: 200px;
+
+  /* margem interna */
+  /* top=0 left=0 bottom=0 right0 */ 
+  /* top/bottom = 0  left/right = 0  */
+  padding: 20px;
+
+  /* margem externa */
+  margin: 20px;
+}

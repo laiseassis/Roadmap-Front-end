@@ -1,0 +1,40 @@
+Doc sobre html basico:
+https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics
+
+Para saber todos os rels que existem (estilos de docs) V
+https://www.w3schools.com/tags/att_link_rel.asp
+
+Extensões Vs Code:
+Live server - pra rodar em tempo real o código que você está codando
+
+
+GLOSSARIO:
+snipet - um pequeno pedaço de código 
+emmet - quando você digita html5 e aperta tab e ele completa
+
+DICAS GERAIS
+
+ICONS - Sugestão de biblioteca de Icons: Feather (ou o fontawesome - o triste é que o mais bonitinhos são pagos)
+FAVICON - Você pode pegar um png do google e colocar como favicon no link rel="icon", mas também pode pegar um png e converter ele em favicon através de programas
+          disponibilizados na internet (com a diferença que o link rel="icon" type="image/x-icon")
+
+HTML:
+* o viewport - é ele que diz se o seu site será responsívo ou não (essencial)
+* No html não faz diferença usar maiusculo ou minusculo (por padrão usamos sempre minusculo)
+* Algumas tags do html, tem semanticas ligadas a SEO, mas isso é especificamente utilizado por dev. de sites institucionais.
+
+CSS:
+* Cascate style sheet = Folha em estilo cascata
+* Sempre utilize fontes gratuitas (não vai ter b.o. com processo ein?) O google fonts é ótimo pra isso
+* Quando importar fontes do googles, sempre escolha fazer pelo import do css, a sintaxe é menor e você incorpora diretamente no css.
+* Sempre escolha importar bibliotecas de icons que sejam SVG (vetores), pois eles são menos pesados do que utilizar imagens
+* É possível fazer CSS dentro das próprias tags - O nome disso é CSS Inline - É um método não recomendado, por deixar o código sujo e desorganizado
+* O código "height: 100%" não funciona, pois o height funciona de forma diferente. O jeito certo de usa-lo está demonstrado abaixo 
+	/* Jeito certo 1 */
+  	height: 200px;
+
+	/* Jeito certo 2 - viewport height - Para pegar a altura inteira da tela visualizada como no exemplo: height: 100% */
+  	/* height: 100vh; */
+JS
+* Quando você for importar uma biblioteca JS é importante chamar ela lá na header
+  E pra ela funcionar precisa ser chamada lá antes do fechamendo do body, por causa da renderização

@@ -1,0 +1,21 @@
+/* importando e usando fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap');
+
+body{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+.container{
+  background-color: red;
+  width: 100%;
+
+  
+  /* O código abaixo não funciona, pois o height funciona de forma diferente. O jeito certo de usa-lo está demonstrado abaixo 
+  height: 100%; */
+
+  /* Jeito certo 1 */
+  height: 200px;
+
+  /* Jeito certo 2 - Para pegar a altura inteira como no exemplo: height: 100% */
+  /* height: 100vh; */
+}
