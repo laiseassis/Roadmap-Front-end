@@ -77,7 +77,7 @@ Montei aqui um roadmap para momentos em que nos sentirmos perdidos sobre "pra on
           <li>Pull/Push</li>
         </ol>
       </li>
-      <li>Códigos git</li>
+      <li><a href="https://gist.github.com/laiseassis/42a9c2ddb869bdd4ca1eaed0cac1a783" target="_blank">Códigos git</a></li>
     </ul>
   </li>
   <li>
