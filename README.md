@@ -100,7 +100,7 @@ Montei aqui um roadmap para momentos em que nos sentirmos perdidos sobre "pra on
     <h3>Build tools</h3>
     <ul>
       <li>Bundler</li>
-      <li>ESLint</li>
+      <li>Formatadores de Linters - ESLint</li>
     </ul>
   </li>
   <li>
