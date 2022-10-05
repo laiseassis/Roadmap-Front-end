@@ -3,11 +3,13 @@
 
 body{
   font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 14px;
 }
 
 .container{
-  background-color: red;
+  background-color: purple;
   width: 100%;
+  color: white;
 
   
   /* O código abaixo não funciona, pois o height funciona de forma diferente. O jeito certo de usa-lo está demonstrado abaixo 
@@ -18,4 +20,56 @@ body{
 
   /* Jeito certo 2 - Para pegar a altura inteira como no exemplo: height: 100% */
   /* height: 100vh; */
+
+  /* max-width: 800px; */
+  margin: auto;
+  min-height: 400px;
+  min-width: 500px;
+}
+
+span{
+  border: 3px solid yellow;
+  border-radius: 8px 0;
+}
+
+.circle{
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  margin: 40px;
+  border-radius: 50%;
+}
+
+header{
+  background: orange;
+  height: 30vh;
+  width: 30vw;
+}
+
+div {
+  font-size: 1.2rem;
+
+  /* 
+    EM
+    primeiro => 14 * 1.2 = 16,8px 
+    segundo => 16,8 * 1,2 = 20,16px
+    É possível verificar isso pelo inspect
+
+    REM é mais usado pois ele se baseia sempre no body
+    14 * 1,2 = 16,8
+  */
+}
+
+p{
+  border: 1px solid red;
+  /* width: 200px;
+  height: 200px; */
+}
+
+.span-menu {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
 }

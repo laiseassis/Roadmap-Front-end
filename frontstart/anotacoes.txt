@@ -35,6 +35,67 @@ CSS:
 
 	/* Jeito certo 2 - viewport height - Para pegar a altura inteira da tela visualizada como no exemplo: height: 100% */
   	/* height: 100vh; */
+* É possível definir min e max de width e height...
+* para centralizar: margin: auto
+* background (cor de fundo) color (cor de fonte)
+* border (largura, estilo e cor) - é possível ver todas as opções no site da w3c
+* border-radius: (é possível definir canto a canto qual será arredondado)
+
+* UNIDADES DE MEDIDA NO CSS
+	* absolutas
+		cm, mm, q, in, pt, pc, px (dessas usamos praticamente só o px)
+	* relativas
+		* Pra fontes: ex, ch, mais usadas: em, rem
+		EM - É sempre relativo a classe pai o valor colocado nele, sempre irá multiplicar o valor do pai
+			(ele não é muito utilizado, justamente por se perder o controle muito fácil dele)
+		REM - É SEMPRE RELATIVO AO BODY
+		* % de viewport: vw, vh (viewport é o pedaço da tela que está aparecendo)
+
+* DISPLAY
+	* Se dividem basicamente em 2: block e inline
+	* Block - sempre oculpa toda a largura possível da tela
+		Elementos que são por padrão: div, p, h1, h2, ...
+		(então um elemento nunca fica do lado do outro)
+		É possível manipular o width e o height 
+	* Inline - Usam somente o espaço necessário e não precisam começar em uma nova linha
+		(elemento aparece proximo do outro na mesma linha)
+		Elementos padrão: span, img, a
+		Não é possível controlar o width e o height
+		Desconsidera margin e padding top e bottom (até consegue colocar coisas na horizontal... na vertical ele quebra)
+	* inline-block
+		Muito utilizado pra criar menu
+		Ele deixa elementos um do lado do outro
+		deixando manipular width e etc.
+ * POSITION
+	
+	*static - 
+		(por default todos os elementos vem static)
+		Ele renderiza os elementos na ordem que aparecem no documento
+		Não é possível mudar top e left
+	* Relative - 
+		Pode ser posicionado relativamente a sua posição original
+		é possivel manipular top e left
+		elemento sai fora do fluxo
+		ela se sobresai da static ficando em primeiro plano
+	* Absolute - 
+		Elemento é posicionado relativamente no ultimo elemento antecessor que não for static
+		é possível manipular top e left
+		elemento sai fora do fluxo
+		necessario indicar o elemento ao qual a posição é relativa
+		(a diferença dele pro relative... é que o relative é baseado na posição original dele
+		já o absolute é possível dizer hierarquicamente quem é seu pai)
+	* Fixed - 
+		Elemento é posicionado relativamente a janela do navegador
+		é possível manipular top e left
+		usado para menus
+	* Sticky - 
+		elemento é posicionado baseado na posição do scroll do usuário
+		dependendo da posição do scroll o elemento se gruda em algum lugar e vira fixed
+		É possível manipular top e left
+
+* Z-index
+
+
 JS
 * Quando você for importar uma biblioteca JS é importante chamar ela lá na header
   E pra ela funcionar precisa ser chamada lá antes do fechamendo do body, por causa da renderização

@@ -1,0 +1,124 @@
+/* importando e usando fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;700&display=swap');
+
+body{
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-size: 14px;
+  background: #EBEBEB;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-container {
+  background: #FFFFFF;
+  margin: 150px auto;
+  width: 400px;
+}
+
+form {
+  padding: 20px;
+}
+
+form h3{
+  text-align: center;
+}
+
+form .input-container {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+form .input-container input, input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+}
+
+form input[type="submit"] {
+  border: 0;
+  background: red;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form .input-container input {
+  border: 1px solid #E4E4E4;
+  color: #818181;
+  padding: 0 55px 0 25px;
+  font-size: 1rem;
+}
+
+form .input-container input::placeholder{
+  color: #818181;
+}
+
+svg {
+  position: absolute;
+  top: calc(50% -12px); 
+  right: 20px;
+  color: #818181;
+}
+
+.options-container {
+  padding: 0 20px;
+  margin: 25px auto;
+  color: #818181;
+}
+
+.options-container .checkbox-container, .options-container a{
+  display: inline-block;
+  width: 50%;
+}
+
+a{
+  text-align: right;
+  color: red;
+  text-decoration: none;
+}
+
+form p{
+  text-align: center;
+  color: #818181;
+}
+
+form .social-media-container {
+  margin: 20px auto;
+  width: fit-content;
+}
+
+form .social-media-container .icon-container {
+  position: relative;
+  background: #375c98;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+form .social-media-container .icon-container:nth-child(2) {
+  background: #C54F33;
+}
+
+form .social-media-container .icon-container:nth-child(3) {
+  background: #4dadf2;
+}
+
+form .social-media-container .icon-container svg {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  color: white;
+}
+
+hr {
+  color: #818181;
+}
+
+.footer {
+  width: fit-content;
+  margin: 20px auto;
+}
+
