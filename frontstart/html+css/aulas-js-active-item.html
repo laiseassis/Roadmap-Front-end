@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul{
+      list-style: none;
+      padding: 0;
+
+      display: flex;
+      justify-content: space-around;
+
+      width: 400px;
+      margin: 100px auto;
+    }
+
+    ul li{
+      height: 25px;
+      padding: 0 10px;
+    }
+
+    .active{
+      color: red;
+      border-bottom: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li class="item" data="service">Serviços</li>
+    <li class="item" data="contact">Contato</li>
+    <li class="item" data="info">Informações</li>
+  </ul>
+
+  <div id="serviceText"><p>Service Text</p></div>
+  <div id="contactText"><p>Contact Text</p></div>
+  <div id="infoText"><p>Info Text</p></div>
+
+  <script>
+    const serviceText = document.getElementById('serviceText');
+    const contactText = document.getElementById('contactText');
+    const infoText = document.getElementById('infoText');
+    hideOrShowTextDiv('service');
+
+
+
+    const items = Array.from(document.getElementsByClassName('item'));
+
+    items.forEach(item =>{
+      item.addEventListener('click', onItemClick);
+    })
+
+    function onItemClick(event){
+      const selectedAttribute = event.target.getAttribute('data');
+      
+      addOrRemoveActive(selectedAttribute);
+
+      hideOrShowTextDiv(selectedAttribute);
+    }
+
+    function hideOrShowTextDiv(selectedAttribute){
+      hideTextElements();
+
+      if(selectedAttribute === 'contact'){
+        contactText.style.display = 'block';
+      }
+
+      if(selectedAttribute === 'service'){
+        serviceText.style.display = 'block';
+      }
+
+      if(selectedAttribute === 'info'){
+        infoText.style.display = 'block';
+      }
+    }
+  
+    function addOrRemoveActive(selectedAttribute){
+      items.forEach(item =>{
+        const itemAttribute = item.getAttribute('data');
+
+        if(itemAttribute === selectedAttribute){
+          item.classList.add('active');
+          return;
+        }
+        
+        item.classList.remove('active');
+      })
+    }
+
+    function hideTextElements(){
+      serviceText.style.display = 'none';
+      contactText.style.display = 'none';
+      infoText.style.display = 'none';
+    }
+  </script>
+  
+</body>
+</html>
